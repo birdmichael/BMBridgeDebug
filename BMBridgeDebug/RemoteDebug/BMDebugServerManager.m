@@ -77,7 +77,7 @@ BOOL kGCDWebServer_logging_enabled = YES;
             id<BMBridgeDebugProtocol> vc = (id<BMBridgeDebugProtocol>)topViewController;
             [vc handleAction:action withParam:param callbackKey:nil];
         } else {
-            NSString *reason = [NSString stringWithFormat:@"[%@ : %p]必须实现BMBridgeDebugProtocol协议", [topViewController class], topViewController];
+            NSString *reason = [NSString stringWithFormat:@"[%@ : %p]必须遵循BMBridgeDebugProtocol协议", [topViewController class], topViewController];
             BDDebugLog(@"%@",reason);
         }
     } else {

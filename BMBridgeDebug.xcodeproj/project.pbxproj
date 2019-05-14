@@ -6,6 +6,20 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		01E093C8228B1FAC002AE3E6 /* BMBridgeDebug.aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 01E093C9228B1FAC002AE3E6 /* Build configuration list for PBXAggregateTarget "BMBridgeDebug.aggregate" */;
+			buildPhases = (
+				01E093CC228B1FB3002AE3E6 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = BMBridgeDebug.aggregate;
+			productName = BMBridgeDebug.aggregate;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		01E0932B228ABBDB002AE3E6 /* BMBridgeDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E09329228ABBDB002AE3E6 /* BMBridgeDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01E0935B228ABBFA002AE3E6 /* GCDWebServerFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E09334228ABBFA002AE3E6 /* GCDWebServerFunctions.h */; };
@@ -46,28 +60,23 @@
 		01E0939A228ABC88002AE3E6 /* favicon.ico in Resources */ = {isa = PBXBuildFile; fileRef = 01E09381228ABC88002AE3E6 /* favicon.ico */; };
 		01E0939B228ABC88002AE3E6 /* renderjson.css in Resources */ = {isa = PBXBuildFile; fileRef = 01E09382228ABC88002AE3E6 /* renderjson.css */; };
 		01E0939C228ABC88002AE3E6 /* renderjson.js in Resources */ = {isa = PBXBuildFile; fileRef = 01E09383228ABC88002AE3E6 /* renderjson.js */; };
-		01E0939D228ABC88002AE3E6 /* mobile to pc.png in Resources */ = {isa = PBXBuildFile; fileRef = 01E09385228ABC88002AE3E6 /* mobile to pc.png */; };
-		01E0939E228ABC88002AE3E6 /* pc to mobile.png in Resources */ = {isa = PBXBuildFile; fileRef = 01E09386228ABC88002AE3E6 /* pc to mobile.png */; };
 		01E0939F228ABC88002AE3E6 /* server.js in Resources */ = {isa = PBXBuildFile; fileRef = 01E09387228ABC88002AE3E6 /* server.js */; };
 		01E093A0228ABC88002AE3E6 /* server.css in Resources */ = {isa = PBXBuildFile; fileRef = 01E09388228ABC88002AE3E6 /* server.css */; };
-		01E093A3228ABC88002AE3E6 /* tool-panel.js in Resources */ = {isa = PBXBuildFile; fileRef = 01E0938C228ABC88002AE3E6 /* tool-panel.js */; };
-		01E093A4228ABC88002AE3E6 /* pageTiming_for_mac.js in Resources */ = {isa = PBXBuildFile; fileRef = 01E0938E228ABC88002AE3E6 /* pageTiming_for_mac.js */; };
-		01E093A5228ABC88002AE3E6 /* profiler_for_mac.js in Resources */ = {isa = PBXBuildFile; fileRef = 01E0938F228ABC88002AE3E6 /* profiler_for_mac.js */; };
-		01E093A6228ABC88002AE3E6 /* profiler.js in Resources */ = {isa = PBXBuildFile; fileRef = 01E09390228ABC88002AE3E6 /* profiler.js */; };
-		01E093A7228ABC88002AE3E6 /* pageTiming.js in Resources */ = {isa = PBXBuildFile; fileRef = 01E09391228ABC88002AE3E6 /* pageTiming.js */; };
 		01E093A8228ABC88002AE3E6 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 01E09392228ABC88002AE3E6 /* logo.png */; };
 		01E093A9228ABC88002AE3E6 /* vue.js in Resources */ = {isa = PBXBuildFile; fileRef = 01E09393228ABC88002AE3E6 /* vue.js */; };
 		01E093AA228ABC88002AE3E6 /* testcase.tmpl in Resources */ = {isa = PBXBuildFile; fileRef = 01E09394228ABC88002AE3E6 /* testcase.tmpl */; };
 		01E093AB228ABC88002AE3E6 /* server.html in Resources */ = {isa = PBXBuildFile; fileRef = 01E09395228ABC88002AE3E6 /* server.html */; };
-		01E093AC228ABC88002AE3E6 /* weinreSupport.js in Resources */ = {isa = PBXBuildFile; fileRef = 01E09397228ABC88002AE3E6 /* weinreSupport.js */; };
-		01E093AF228ABCAF002AE3E6 /* BMDebugServerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E093AD228ABCAF002AE3E6 /* BMDebugServerManager.h */; };
+		01E093AF228ABCAF002AE3E6 /* BMDebugServerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E093AD228ABCAF002AE3E6 /* BMDebugServerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01E093B0228ABCAF002AE3E6 /* BMDebugServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E093AE228ABCAF002AE3E6 /* BMDebugServerManager.m */; };
-		01E093B3228AC4B3002AE3E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E093B2228AC4B3002AE3E6 /* UIKit.framework */; };
 		01E093B5228AC562002AE3E6 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E093B4228AC562002AE3E6 /* libxml2.tbd */; };
-		01E093B9228AD2AB002AE3E6 /* BMBridgeDebugHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E093B8228AD2AB002AE3E6 /* BMBridgeDebugHeader.h */; };
-		01E093BB228ADD33002AE3E6 /* BMBridgeDebugProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E093BA228ADD33002AE3E6 /* BMBridgeDebugProtocol.h */; };
+		01E093B9228AD2AB002AE3E6 /* BMBridgeDebugHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E093B8228AD2AB002AE3E6 /* BMBridgeDebugHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01E093BB228ADD33002AE3E6 /* BMBridgeDebugProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E093BA228ADD33002AE3E6 /* BMBridgeDebugProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01E093BE228B04C0002AE3E6 /* BDDebugViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E093BC228B04C0002AE3E6 /* BDDebugViewController.h */; };
 		01E093BF228B04C0002AE3E6 /* BDDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E093BD228B04C0002AE3E6 /* BDDebugViewController.m */; };
+		01E093D9228B2786002AE3E6 /* profile in Resources */ = {isa = PBXBuildFile; fileRef = 01E093D5228B2786002AE3E6 /* profile */; };
+		01E093DA228B2786002AE3E6 /* components in Resources */ = {isa = PBXBuildFile; fileRef = 01E093D6228B2786002AE3E6 /* components */; };
+		01E093DB228B2786002AE3E6 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 01E093D7228B2786002AE3E6 /* images */; };
+		01E093DC228B2786002AE3E6 /* thirdParty in Resources */ = {isa = PBXBuildFile; fileRef = 01E093D8228B2786002AE3E6 /* thirdParty */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,20 +121,12 @@
 		01E09381228ABC88002AE3E6 /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
 		01E09382228ABC88002AE3E6 /* renderjson.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = renderjson.css; sourceTree = "<group>"; };
 		01E09383228ABC88002AE3E6 /* renderjson.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = renderjson.js; sourceTree = "<group>"; };
-		01E09385228ABC88002AE3E6 /* mobile to pc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile to pc.png"; sourceTree = "<group>"; };
-		01E09386228ABC88002AE3E6 /* pc to mobile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pc to mobile.png"; sourceTree = "<group>"; };
 		01E09387228ABC88002AE3E6 /* server.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = server.js; sourceTree = "<group>"; };
 		01E09388228ABC88002AE3E6 /* server.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = server.css; sourceTree = "<group>"; };
-		01E0938C228ABC88002AE3E6 /* tool-panel.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "tool-panel.js"; sourceTree = "<group>"; };
-		01E0938E228ABC88002AE3E6 /* pageTiming_for_mac.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = pageTiming_for_mac.js; sourceTree = "<group>"; };
-		01E0938F228ABC88002AE3E6 /* profiler_for_mac.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = profiler_for_mac.js; sourceTree = "<group>"; };
-		01E09390228ABC88002AE3E6 /* profiler.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = profiler.js; sourceTree = "<group>"; };
-		01E09391228ABC88002AE3E6 /* pageTiming.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = pageTiming.js; sourceTree = "<group>"; };
 		01E09392228ABC88002AE3E6 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		01E09393228ABC88002AE3E6 /* vue.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = vue.js; sourceTree = "<group>"; };
 		01E09394228ABC88002AE3E6 /* testcase.tmpl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testcase.tmpl; sourceTree = "<group>"; };
 		01E09395228ABC88002AE3E6 /* server.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = server.html; sourceTree = "<group>"; };
-		01E09397228ABC88002AE3E6 /* weinreSupport.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = weinreSupport.js; sourceTree = "<group>"; };
 		01E093AD228ABCAF002AE3E6 /* BMDebugServerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMDebugServerManager.h; sourceTree = "<group>"; };
 		01E093AE228ABCAF002AE3E6 /* BMDebugServerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMDebugServerManager.m; sourceTree = "<group>"; };
 		01E093B2228AC4B3002AE3E6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -134,6 +135,10 @@
 		01E093BA228ADD33002AE3E6 /* BMBridgeDebugProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMBridgeDebugProtocol.h; sourceTree = "<group>"; };
 		01E093BC228B04C0002AE3E6 /* BDDebugViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDDebugViewController.h; sourceTree = "<group>"; };
 		01E093BD228B04C0002AE3E6 /* BDDebugViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDDebugViewController.m; sourceTree = "<group>"; };
+		01E093D5228B2786002AE3E6 /* profile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = profile; sourceTree = "<group>"; };
+		01E093D6228B2786002AE3E6 /* components */ = {isa = PBXFileReference; lastKnownFileType = folder; path = components; sourceTree = "<group>"; };
+		01E093D7228B2786002AE3E6 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		01E093D8228B2786002AE3E6 /* thirdParty */ = {isa = PBXFileReference; lastKnownFileType = folder; path = thirdParty; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +147,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				01E093B5228AC562002AE3E6 /* libxml2.tbd in Frameworks */,
-				01E093B3228AC4B3002AE3E6 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,61 +275,25 @@
 		01E0937E228ABC88002AE3E6 /* RemoteDebug */ = {
 			isa = PBXGroup;
 			children = (
+				01E093D6228B2786002AE3E6 /* components */,
+				01E093D7228B2786002AE3E6 /* images */,
+				01E093D5228B2786002AE3E6 /* profile */,
+				01E093D8228B2786002AE3E6 /* thirdParty */,
 				01E09381228ABC88002AE3E6 /* favicon.ico */,
 				01E09382228ABC88002AE3E6 /* renderjson.css */,
 				01E09383228ABC88002AE3E6 /* renderjson.js */,
-				01E09384228ABC88002AE3E6 /* images */,
 				01E09387228ABC88002AE3E6 /* server.js */,
 				01E09388228ABC88002AE3E6 /* server.css */,
-				01E0938B228ABC88002AE3E6 /* components */,
-				01E0938D228ABC88002AE3E6 /* profile */,
 				01E09392228ABC88002AE3E6 /* logo.png */,
 				01E09393228ABC88002AE3E6 /* vue.js */,
 				01E09394228ABC88002AE3E6 /* testcase.tmpl */,
 				01E09395228ABC88002AE3E6 /* server.html */,
-				01E09396228ABC88002AE3E6 /* thirdParty */,
 				01E093AD228ABCAF002AE3E6 /* BMDebugServerManager.h */,
 				01E093AE228ABCAF002AE3E6 /* BMDebugServerManager.m */,
 				01E093BC228B04C0002AE3E6 /* BDDebugViewController.h */,
 				01E093BD228B04C0002AE3E6 /* BDDebugViewController.m */,
 			);
 			path = RemoteDebug;
-			sourceTree = "<group>";
-		};
-		01E09384228ABC88002AE3E6 /* images */ = {
-			isa = PBXGroup;
-			children = (
-				01E09385228ABC88002AE3E6 /* mobile to pc.png */,
-				01E09386228ABC88002AE3E6 /* pc to mobile.png */,
-			);
-			path = images;
-			sourceTree = "<group>";
-		};
-		01E0938B228ABC88002AE3E6 /* components */ = {
-			isa = PBXGroup;
-			children = (
-				01E0938C228ABC88002AE3E6 /* tool-panel.js */,
-			);
-			path = components;
-			sourceTree = "<group>";
-		};
-		01E0938D228ABC88002AE3E6 /* profile */ = {
-			isa = PBXGroup;
-			children = (
-				01E0938E228ABC88002AE3E6 /* pageTiming_for_mac.js */,
-				01E0938F228ABC88002AE3E6 /* profiler_for_mac.js */,
-				01E09390228ABC88002AE3E6 /* profiler.js */,
-				01E09391228ABC88002AE3E6 /* pageTiming.js */,
-			);
-			path = profile;
-			sourceTree = "<group>";
-		};
-		01E09396228ABC88002AE3E6 /* thirdParty */ = {
-			isa = PBXGroup;
-			children = (
-				01E09397228ABC88002AE3E6 /* weinreSupport.js */,
-			);
-			path = thirdParty;
 			sourceTree = "<group>";
 		};
 		01E093B1228AC4B3002AE3E6 /* Frameworks */ = {
@@ -354,6 +322,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				01E09367228ABBFA002AE3E6 /* GCDWebServerFileResponse.h in Headers */,
+				01E093BB228ADD33002AE3E6 /* BMBridgeDebugProtocol.h in Headers */,
+				01E093B9228AD2AB002AE3E6 /* BMBridgeDebugHeader.h in Headers */,
+				01E093AF228ABCAF002AE3E6 /* BMDebugServerManager.h in Headers */,
+				01E093BE228B04C0002AE3E6 /* BDDebugViewController.h in Headers */,
 				01E0937A228ABBFA002AE3E6 /* HTMLNode.h in Headers */,
 				01E0935C228ABBFA002AE3E6 /* GCDWebServerPrivate.h in Headers */,
 				01E0937C228ABBFA002AE3E6 /* HTMLParser.h in Headers */,
@@ -363,7 +335,6 @@
 				01E09361228ABBFA002AE3E6 /* GCDWebServerHTTPStatusCodes.h in Headers */,
 				01E0936A228ABBFA002AE3E6 /* GCDWebServerDataResponse.h in Headers */,
 				01E09362228ABBFA002AE3E6 /* GCDWebServerResponse.h in Headers */,
-				01E093AF228ABCAF002AE3E6 /* BMDebugServerManager.h in Headers */,
 				01E0932B228ABBDB002AE3E6 /* BMBridgeDebug.h in Headers */,
 				01E0935F228ABBFA002AE3E6 /* GCDWebServer.h in Headers */,
 				01E0936D228ABBFA002AE3E6 /* GCDWebServerErrorResponse.h in Headers */,
@@ -371,11 +342,8 @@
 				01E0935B228ABBFA002AE3E6 /* GCDWebServerFunctions.h in Headers */,
 				01E09366228ABBFA002AE3E6 /* GCDWebServerRequest.h in Headers */,
 				01E09378228ABBFA002AE3E6 /* Reachability.h in Headers */,
-				01E093BB228ADD33002AE3E6 /* BMBridgeDebugProtocol.h in Headers */,
 				01E09376228ABBFA002AE3E6 /* GCDWebServerURLEncodedFormRequest.h in Headers */,
-				01E093B9228AD2AB002AE3E6 /* BMBridgeDebugHeader.h in Headers */,
 				01E0936F228ABBFA002AE3E6 /* GCDWebServerDataRequest.h in Headers */,
-				01E093BE228B04C0002AE3E6 /* BDDebugViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +380,9 @@
 					01E09325228ABBDB002AE3E6 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
+					01E093C8228B1FAC002AE3E6 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 01E09320228ABBDB002AE3E6 /* Build configuration list for PBXProject "BMBridgeDebug" */;
@@ -427,6 +398,7 @@
 			projectRoot = "";
 			targets = (
 				01E09325228ABBDB002AE3E6 /* BMBridgeDebug */,
+				01E093C8228B1FAC002AE3E6 /* BMBridgeDebug.aggregate */,
 			);
 		};
 /* End PBXProject section */
@@ -436,28 +408,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E093DB228B2786002AE3E6 /* images in Resources */,
 				01E093A0228ABC88002AE3E6 /* server.css in Resources */,
-				01E093A6228ABC88002AE3E6 /* profiler.js in Resources */,
-				01E093AC228ABC88002AE3E6 /* weinreSupport.js in Resources */,
 				01E0939B228ABC88002AE3E6 /* renderjson.css in Resources */,
+				01E093D9228B2786002AE3E6 /* profile in Resources */,
 				01E0939A228ABC88002AE3E6 /* favicon.ico in Resources */,
+				01E093DC228B2786002AE3E6 /* thirdParty in Resources */,
+				01E093DA228B2786002AE3E6 /* components in Resources */,
 				01E093AA228ABC88002AE3E6 /* testcase.tmpl in Resources */,
 				01E093A8228ABC88002AE3E6 /* logo.png in Resources */,
 				01E093A9228ABC88002AE3E6 /* vue.js in Resources */,
 				01E0939F228ABC88002AE3E6 /* server.js in Resources */,
-				01E093A3228ABC88002AE3E6 /* tool-panel.js in Resources */,
-				01E093A5228ABC88002AE3E6 /* profiler_for_mac.js in Resources */,
 				01E093AB228ABC88002AE3E6 /* server.html in Resources */,
-				01E093A7228ABC88002AE3E6 /* pageTiming.js in Resources */,
-				01E0939D228ABC88002AE3E6 /* mobile to pc.png in Resources */,
-				01E0939E228ABC88002AE3E6 /* pc to mobile.png in Resources */,
-				01E093A4228ABC88002AE3E6 /* pageTiming_for_mac.js in Resources */,
 				01E0939C228ABC88002AE3E6 /* renderjson.js in Resources */,
 				01E0937B228ABBFA002AE3E6 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01E093CC228B1FB3002AE3E6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#  This is a modified script and it will ask the target to build separate libraries for simulator and device etc   \n# On project folder it will be found under Generated-Frameworks folder  \n# As per the documentations for XCode 10 Apple does not allow building FAT librares  \n# Go ahead and check https://forums.developer.apple.com/thread/66978 and https://forums.developer.apple.com/thread/109583  \n# Enjoy NicoX :)  \n\nset -e  \n# If we're already inside this script then die  \nif [ -n \"$MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then  \nexit 0  \nfi  \nexport MULTIPLATFORM_BUILD_IN_PROGRESS=1  \n\n############################################  \n# Options  \n############################################  \nREVEAL_ARCHIVE_IN_FINDER=true  \nOUTPUT_DIR_NAME=\"Generated-Frameworks\"  \nFRAMEWORK_NAME=\"${PROJECT_NAME}\"  \n\nOUTPUT_DIR=\"${PROJECT_DIR}/${OUTPUT_DIR_NAME}/${FRAMEWORK_NAME}-${CONFIGURATION}-framework/\"  \nSIMULATOR_LIBRARY_OUT_DIR=\"${OUTPUT_DIR}/Simulator/\"  \nGENERATED_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"  \nSIMULATOR_FRAMEWORK_OUT_DIR=\"${GENERATED_LIBRARY_DIR}/Simulator\"  \nFRAMEWORK=\"${SIMULATOR_FRAMEWORK_OUT_DIR}/${FRAMEWORK_NAME}.framework\"  \n\n########################################################################  \n# Build Frameworks  \n########################################################################  \nxcodebuild -scheme ${PROJECT_NAME} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator OBJROOT=\"${OBJROOT}/DependantBuilds\"   \n\n########################################################################  \n# Create directory for general  \n########################################################################  \nrm -rf \"${GENERATED_LIBRARY_DIR}\"  \nmkdir \"${GENERATED_LIBRARY_DIR}\"  \nmkdir \"${SIMULATOR_FRAMEWORK_OUT_DIR}\"  \nmkdir \"${FRAMEWORK}\"  \n\n########################################################################  \n# Copy files Framework  \n########################################################################  \nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework\"  \n\n########################################################################  \n# Make a binary for simulaotr ie. x86_64 ot i386 file system  \n########################################################################  \n# For Swift framework, Swiftmodule needs to be copied in the universal framework   \nif [ -d \"${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then  \ncp -f \"${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\"* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo  \nfi  \ncp -r \"${SIMULATOR_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"  \n\n########################################################################  \n# Copy simulator build library in output folder  \n########################################################################  \nrm -rf \"$OUTPUT_DIR\"  \nmkdir -p \"$OUTPUT_DIR\"  \nmkdir -p ${SIMULATOR_LIBRARY_OUT_DIR}  \n\ncp -r \"${FRAMEWORK}\" \"$SIMULATOR_LIBRARY_OUT_DIR\"  \n#########################################################################  \n\necho \"Simulator Lib Path ---->\" \"${SIMULATOR_LIBRARY_PATH}\" \"<----\"  \n\nif [ ${REVEAL_ARCHIVE_IN_FINDER} = true ]; then  \nopen \"${SIMULATOR_LIBRARY_OUT_DIR}/\"  \nfi  \n\n\n##########################################################################  \n# Now lets build for device; shall we?  \n##########################################################################  \nDEVICE_LIBRARY_OUT_DIR=\"${OUTPUT_DIR}/Device/\"  \nDEVICE_FRAMEWORK_OUT_DIR=\"${GENERATED_LIBRARY_DIR}/Device\"  \nFRAMEWORK=\"${DEVICE_FRAMEWORK_OUT_DIR}/${FRAMEWORK_NAME}.framework\"  \n\n########################################################################  \n# Build Device Frameworks  \n########################################################################  \nxcodebuild -scheme ${PROJECT_NAME} -sdk iphoneos ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos OBJROOT=\"${OBJROOT}/DependantBuilds\"   \n\n########################################################################  \n# Create directory for general  \n########################################################################  \nrm -rf \"${GENERATED_LIBRARY_DIR}\"  \nmkdir \"${GENERATED_LIBRARY_DIR}\"  \nmkdir \"${DEVICE_FRAMEWORK_OUT_DIR}\"  \nmkdir \"${FRAMEWORK}\"  \n\n########################################################################  \n# Copy files Framework  \n########################################################################  \nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\"  \n\n########################################################################  \n# Make a binary for device ie. arm7, arm7v, arm8 file system  \n########################################################################  \n# For Swift framework, Swiftmodule needs to be copied in the universal framework   \nif [ -d \"${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then  \ncp -f \"${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\"* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo  \nfi  \ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"  \n########################################################################  \n# Copy device build library in output folder  \n########################################################################  \nmkdir -p ${DEVICE_LIBRARY_OUT_DIR}  \ncp -r \"${FRAMEWORK}\" \"$DEVICE_LIBRARY_OUT_DIR\"  \n\necho \"Device Lib Path ---->\" \"${DEVICE_LIBRARY_PATH}\" \"<----\"  \n\nif [ ${REVEAL_ARCHIVE_IN_FINDER} = true ]; then  \nopen \"${DEVICE_LIBRARY_OUT_DIR}/\"  \nfi \n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		01E09322228ABBDB002AE3E6 /* Sources */ = {
@@ -624,7 +612,7 @@
 				HEADER_SEARCH_PATHS = "$(SDK_DIR)/usr/include/libxml2";
 				INFOPLIST_FILE = BMBridgeDebug/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -650,7 +638,7 @@
 				HEADER_SEARCH_PATHS = "$(SDK_DIR)/usr/include/libxml2";
 				INFOPLIST_FILE = BMBridgeDebug/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -660,6 +648,24 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		01E093CA228B1FAC002AE3E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q465ZYUGTC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		01E093CB228B1FAC002AE3E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q465ZYUGTC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -680,6 +686,15 @@
 			buildConfigurations = (
 				01E0932F228ABBDB002AE3E6 /* Debug */,
 				01E09330228ABBDB002AE3E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01E093C9228B1FAC002AE3E6 /* Build configuration list for PBXAggregateTarget "BMBridgeDebug.aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01E093CA228B1FAC002AE3E6 /* Debug */,
+				01E093CB228B1FAC002AE3E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
