@@ -58,7 +58,7 @@ BOOL kGCDWebServer_logging_enabled = YES;
         _eventLogs = [NSMutableArray arrayWithCapacity:10];
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(requestEventOccur:) name:kBMBridgeDebugInvokeRequestEvent object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(responseEventOccur:) name:kBMBridgeDebugResponseEvent object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(responseEventOccur:) name:kBMBridgeDebugInvokeResponseEvent object:nil];
         
 //        [AHDebugResponse setupDebugger];
     }

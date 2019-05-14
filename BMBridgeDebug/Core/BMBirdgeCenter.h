@@ -10,8 +10,8 @@
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
 
-static NSString *kBMBridgeDebugInvokeRequestEvent = @"kBMBridgeDebugInvokeRequestEvent";
-static NSString *kBMBridgeDebugResponseEvent = @"kBMBridgeDebugResponseEvent";
+static NSString * _Nullable kBMBridgeDebugInvokeRequestEvent = @"kBMBridgeDebugInvokeRequestEvent";
+static NSString * _Nullable kBMBridgeDebugInvokeResponseEvent = @"kBMBridgeDebugInvokeResponseEvent";
 
 NS_ASSUME_NONNULL_BEGIN
 

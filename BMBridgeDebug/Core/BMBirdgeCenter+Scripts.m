@@ -64,7 +64,7 @@
     jsCode = [jsCode stringByReplacingOccurrencesOfString:@"\n" withString:@""];
     [self executeJavaScriptString:jsCode];
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:kBMBridgeDebugResponseEvent
+    [[NSNotificationCenter defaultCenter] postNotificationName:kBMBridgeDebugInvokeResponseEvent
                                                         object:@{
                                                                  kBDActionKey: actionName,
                                                                  kBDParamKey: paramDict
