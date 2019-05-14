@@ -1,4 +1,4 @@
-window.appHost = {
+window.bridgeDebug = {
     invoke: function (action, param) {
         var xhr = new XMLHttpRequest();
         xhr.open("POST", "/command.do", true);
@@ -132,13 +132,13 @@ function _parseCommand(com) {
     if (com.indexOf(":") == 0) {
         var args;
         if (com == ":testcase") {
-            com = "window.appHost.invoke('testcase')";
+            com = "window.bridgeDebug.invoke('testcase')";
         } else if (com.indexOf(":list") >= 0) {
-            com = "window.appHost.invoke('list')";
+            com = "window.bridgeDebug.invoke('list')";
         } else if (com.indexOf(":apropos") >= 0) {
             var api = com.replace(':apropos','').trim();
             if (api.length > 0) {
-                com = "window.appHost.invoke('apropos', {signature:'" + api + "'})";
+                com = "window.bridgeDebug.invoke('apropos', {signature:'" + api + "'})";
             } else {
                 console.log("参数出错 " + com);
                 com = null;
@@ -147,9 +147,9 @@ function _parseCommand(com) {
             var url = com.replace(':weinre','').trim();
             if (url.length > 0) {
                 if (url === "disable") {
-                    com = "window.appHost.invoke('weinre', {disabled:true})";
+                    com = "window.bridgeDebug.invoke('weinre', {disabled:true})";
                 } else {
-                    com = "window.appHost.invoke('weinre', {url:'" + url + "'})";
+                    com = "window.bridgeDebug.invoke('weinre', {url:'" + url + "'})";
                 }
             } else {
                 console.log("参数出错 " + com);
@@ -158,21 +158,21 @@ function _parseCommand(com) {
         } else if (com.indexOf(":timing") >= 0) {
             var mobile = com.replace(":timing", "").trim();
             if (mobile.length > 0){
-                com = "window.appHost.invoke('timing', {mobile:true})";
+                com = "window.bridgeDebug.invoke('timing', {mobile:true})";
             } else {
-                com = "window.appHost.invoke('timing', {})";
+                com = "window.bridgeDebug.invoke('timing', {})";
             }
         } else if (com.indexOf(":eval") >= 0) {
             var code = com.replace(":eval", "").trim();
             if (code.length > 0) {
                 var p = window.JSON.stringify({ code: code.trim() });
-                com = "window.appHost.invoke('eval', " + p + ")";
+                com = "window.bridgeDebug.invoke('eval', " + p + ")";
             } else {
                 console.log("参数出错 " + com);
                 com = null;
             }
         } else if (com.indexOf(":clearCookie") >= 0) {
-            com = "window.appHost.invoke('clearCookie')";
+            com = "window.bridgeDebug.invoke('clearCookie')";
         } else {
             window.alert("不支持的命令 " + com);
             com = null;

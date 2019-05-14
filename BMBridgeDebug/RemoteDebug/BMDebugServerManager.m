@@ -13,10 +13,7 @@
 #import "BMBridgeDebugHeader.h"
 #import "GCDWebServerURLEncodedFormRequest.h"
 #import "BMBridgeDebugProtocol.h"
-
-
-static NSString *kAppHostInvokeRequestEvent = @"kAppHostInvokeRequestEvent";
-static NSString *kAppHostInvokeResponseEvent = @"kAppHostInvokeResponseEvent";
+#import "BMBirdgeCenter.h"
 
 @interface BMDebugServerManager () <BDDebugViewDelegate>
 /** log队列 */
@@ -60,8 +57,8 @@ BOOL kGCDWebServer_logging_enabled = YES;
     if (self = [super init]) {
         _eventLogs = [NSMutableArray arrayWithCapacity:10];
         
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(requestEventOccur:) name:kAppHostInvokeRequestEvent object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(responseEventOccur:) name:kAppHostInvokeResponseEvent object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(requestEventOccur:) name:kBMBridgeDebugInvokeRequestEvent object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(responseEventOccur:) name:kBMBridgeDebugResponseEvent object:nil];
         
 //        [AHDebugResponse setupDebugger];
     }

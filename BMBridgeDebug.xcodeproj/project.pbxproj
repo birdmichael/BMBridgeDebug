@@ -77,6 +77,12 @@
 		01E093DA228B2786002AE3E6 /* components in Resources */ = {isa = PBXBuildFile; fileRef = 01E093D6228B2786002AE3E6 /* components */; };
 		01E093DB228B2786002AE3E6 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 01E093D7228B2786002AE3E6 /* images */; };
 		01E093DC228B2786002AE3E6 /* thirdParty in Resources */ = {isa = PBXBuildFile; fileRef = 01E093D8228B2786002AE3E6 /* thirdParty */; };
+		01E093DF228B35A9002AE3E6 /* BMBirdgeCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E093DD228B35A9002AE3E6 /* BMBirdgeCenter.h */; };
+		01E093E0228B35A9002AE3E6 /* BMBirdgeCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E093DE228B35A9002AE3E6 /* BMBirdgeCenter.m */; };
+		01E093E3228B361A002AE3E6 /* BMBirdgeCenter+Scripts.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E093E1228B361A002AE3E6 /* BMBirdgeCenter+Scripts.h */; };
+		01E093E4228B361A002AE3E6 /* BMBirdgeCenter+Scripts.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E093E2228B361A002AE3E6 /* BMBirdgeCenter+Scripts.m */; };
+		01E093EA228B38C2002AE3E6 /* bridgeDebug_version_1.5.0.js in Resources */ = {isa = PBXBuildFile; fileRef = 01E093E8228B38C2002AE3E6 /* bridgeDebug_version_1.5.0.js */; };
+		01E093EB228B38C2002AE3E6 /* eval.js in Resources */ = {isa = PBXBuildFile; fileRef = 01E093E9228B38C2002AE3E6 /* eval.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,6 +145,12 @@
 		01E093D6228B2786002AE3E6 /* components */ = {isa = PBXFileReference; lastKnownFileType = folder; path = components; sourceTree = "<group>"; };
 		01E093D7228B2786002AE3E6 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		01E093D8228B2786002AE3E6 /* thirdParty */ = {isa = PBXFileReference; lastKnownFileType = folder; path = thirdParty; sourceTree = "<group>"; };
+		01E093DD228B35A9002AE3E6 /* BMBirdgeCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMBirdgeCenter.h; sourceTree = "<group>"; };
+		01E093DE228B35A9002AE3E6 /* BMBirdgeCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMBirdgeCenter.m; sourceTree = "<group>"; };
+		01E093E1228B361A002AE3E6 /* BMBirdgeCenter+Scripts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BMBirdgeCenter+Scripts.h"; sourceTree = "<group>"; };
+		01E093E2228B361A002AE3E6 /* BMBirdgeCenter+Scripts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BMBirdgeCenter+Scripts.m"; sourceTree = "<group>"; };
+		01E093E8228B38C2002AE3E6 /* bridgeDebug_version_1.5.0.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bridgeDebug_version_1.5.0.js; sourceTree = "<group>"; };
+		01E093E9228B38C2002AE3E6 /* eval.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = eval.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,10 +320,25 @@
 		01E093B6228ACCF0002AE3E6 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				01E093E7228B38C2002AE3E6 /* html */,
 				01E093B8228AD2AB002AE3E6 /* BMBridgeDebugHeader.h */,
 				01E093BA228ADD33002AE3E6 /* BMBridgeDebugProtocol.h */,
+				01E093DD228B35A9002AE3E6 /* BMBirdgeCenter.h */,
+				01E093DE228B35A9002AE3E6 /* BMBirdgeCenter.m */,
+				01E093E1228B361A002AE3E6 /* BMBirdgeCenter+Scripts.h */,
+				01E093E2228B361A002AE3E6 /* BMBirdgeCenter+Scripts.m */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		01E093E7228B38C2002AE3E6 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				01E093E8228B38C2002AE3E6 /* bridgeDebug_version_1.5.0.js */,
+				01E093E9228B38C2002AE3E6 /* eval.js */,
+			);
+			name = html;
+			path = ../../../../Downloads/AppHostExample/AppHost/AppHost/Core/html;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,7 +366,9 @@
 				01E0935F228ABBFA002AE3E6 /* GCDWebServer.h in Headers */,
 				01E0936D228ABBFA002AE3E6 /* GCDWebServerErrorResponse.h in Headers */,
 				01E09371228ABBFA002AE3E6 /* GCDWebServerFileRequest.h in Headers */,
+				01E093E3228B361A002AE3E6 /* BMBirdgeCenter+Scripts.h in Headers */,
 				01E0935B228ABBFA002AE3E6 /* GCDWebServerFunctions.h in Headers */,
+				01E093DF228B35A9002AE3E6 /* BMBirdgeCenter.h in Headers */,
 				01E09366228ABBFA002AE3E6 /* GCDWebServerRequest.h in Headers */,
 				01E09378228ABBFA002AE3E6 /* Reachability.h in Headers */,
 				01E09376228ABBFA002AE3E6 /* GCDWebServerURLEncodedFormRequest.h in Headers */,
@@ -416,7 +445,9 @@
 				01E093DC228B2786002AE3E6 /* thirdParty in Resources */,
 				01E093DA228B2786002AE3E6 /* components in Resources */,
 				01E093AA228ABC88002AE3E6 /* testcase.tmpl in Resources */,
+				01E093EA228B38C2002AE3E6 /* bridgeDebug_version_1.5.0.js in Resources */,
 				01E093A8228ABC88002AE3E6 /* logo.png in Resources */,
+				01E093EB228B38C2002AE3E6 /* eval.js in Resources */,
 				01E093A9228ABC88002AE3E6 /* vue.js in Resources */,
 				01E0939F228ABC88002AE3E6 /* server.js in Resources */,
 				01E093AB228ABC88002AE3E6 /* server.html in Resources */,
@@ -455,6 +486,7 @@
 				01E0937D228ABBFA002AE3E6 /* HTMLNode.m in Sources */,
 				01E09373228ABBFA002AE3E6 /* GCDWebServerMultiPartFormRequest.m in Sources */,
 				01E09369228ABBFA002AE3E6 /* GCDWebServerErrorResponse.m in Sources */,
+				01E093E4228B361A002AE3E6 /* BMBirdgeCenter+Scripts.m in Sources */,
 				01E09374228ABBFA002AE3E6 /* GCDWebServerDataRequest.m in Sources */,
 				01E0936C228ABBFA002AE3E6 /* GCDWebServerDataResponse.m in Sources */,
 				01E09379228ABBFA002AE3E6 /* HTMLParser.m in Sources */,
@@ -468,6 +500,7 @@
 				01E093BF228B04C0002AE3E6 /* BDDebugViewController.m in Sources */,
 				01E09377228ABBFA002AE3E6 /* Reachability.m in Sources */,
 				01E0935D228ABBFA002AE3E6 /* GCDWebServerResponse.m in Sources */,
+				01E093E0228B35A9002AE3E6 /* BMBirdgeCenter.m in Sources */,
 				01E09363228ABBFA002AE3E6 /* GCDWebServerFunctions.m in Sources */,
 				01E09375228ABBFA002AE3E6 /* GCDWebServerFileRequest.m in Sources */,
 			);
