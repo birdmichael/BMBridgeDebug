@@ -15,7 +15,7 @@ static NSString * _Nullable kBMBridgeDebugInvokeResponseEvent = @"kBMBridgeDebug
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BMBirdgeCenter : NSObject
+@interface BMBridgeCenter : NSObject
 
 @property (nonatomic, strong, readonly) WKWebView *webView;
 

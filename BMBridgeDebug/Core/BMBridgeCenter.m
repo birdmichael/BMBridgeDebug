@@ -6,8 +6,8 @@
 //  Copyright © 2019 BirdMichael. All rights reserved.
 //
 
-#import "BMBirdgeCenter.h"
+#import "BMBridgeCenter.h"
 
-@implementation BMBirdgeCenter
+@implementation BMBridgeCenter
 
 @end

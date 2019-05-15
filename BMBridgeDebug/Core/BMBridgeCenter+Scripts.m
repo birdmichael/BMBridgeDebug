@@ -6,11 +6,11 @@
 //  Copyright © 2019 BirdMichael. All rights reserved.
 //
 
-#import "BMBirdgeCenter+Scripts.h"
+#import "BMBridgeCenter+Scripts.h"
 #import <UIKit/UIKit.h>
 #import "BMBridgeDebugHeader.h"
 
-@implementation BMBirdgeCenter (Scripts)
+@implementation BMBridgeCenter (Scripts)
 
 - (void)insertData:(NSDictionary *)json intoPageWithVarName:(NSString *)appProperty
 {

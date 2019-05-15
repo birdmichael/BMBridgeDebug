@@ -20,3 +20,7 @@ FOUNDATION_EXPORT const unsigned char BMBridgeDebugVersionString[];
 #import <BMBridgeDebug/BMBridgeDebugHeader.h>
 #import <BMBridgeDebug/BMBridgeDebugProtocol.h>
 #import <BMBridgeDebug/BMDebugServerManager.h>
+#import <BMBridgeDebug/BMBridgeCenter.h>
+#import <BMBridgeDebug/BDResponse.h>
+#import <BMBridgeDebug/BDResponseManager.h>
+#import <BMBridgeDebug/BMBridgeCenter+Scripts.h>

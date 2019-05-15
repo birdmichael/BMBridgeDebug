@@ -13,7 +13,8 @@
 #import "BMBridgeDebugHeader.h"
 #import "GCDWebServerURLEncodedFormRequest.h"
 #import "BMBridgeDebugProtocol.h"
-#import "BMBirdgeCenter.h"
+#import "BMBridgeCenter.h"
+#import "BMBridgeCenter+Dispatch.h"
 
 @interface BMDebugServerManager () <BDDebugViewDelegate>
 /** log队列 */
@@ -68,13 +69,12 @@ BOOL kGCDWebServer_logging_enabled = YES;
 #pragma mark ——— 私有方法
 - (void)debugCommand:(NSString *)action param:(NSDictionary *)param {
     if (action.length > 0) {
-        // 检查当前是否有 AppHostViewController 正在展示，如果有则使用此界面，如果没有新开一个页面
         UIViewController *topViewController = [self visibleViewController];
-        if ([topViewController conformsToProtocol:@protocol(BMBridgeDebugProtocol)]) {
-            id<BMBridgeDebugProtocol> vc = (id<BMBridgeDebugProtocol>)topViewController;
-            [vc handleAction:action withParam:param callbackKey:nil];
+        if ([topViewController conformsToProtocol:@protocol(BMBridgeDebugCenterProtocol)]) {
+            id<BMBridgeDebugCenterProtocol> vc = (id<BMBridgeDebugCenterProtocol>)topViewController;
+            [vc.center callNative:action parameter:param];
         } else {
-            NSString *reason = [NSString stringWithFormat:@"[%@ : %p]必须遵循BMBridgeDebugProtocol协议", [topViewController class], topViewController];
+            NSString *reason = [NSString stringWithFormat:@"[%@ : %p]必须遵循BMBridgeDebugCenterProtocol协议", [topViewController class], topViewController];
             BDDebugLog(@"%@",reason);
         }
     } else {

@@ -9,8 +9,8 @@
 #ifndef BMBridgeDebugHeader_h
 #define BMBridgeDebugHeader_h
 
-#if !defined(BMDebugLog)
-#ifdef BM_DEBUG
+#if !defined(BDDebugLog)
+#ifdef BD_DEBUG
 #define BDDebugLog(format, ...)  do {\
 (NSLog)((@"[BMBridgeDebug] " format), ##__VA_ARGS__); \
 } while (0)

@@ -6,13 +6,13 @@
 //  Copyright © 2019 BirdMichael. All rights reserved.
 //
 
-#import "BMBirdgeCenter.h"
+#import "BMBridgeCenter.h"
 
 @class WKUserContentController;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BMBirdgeCenter (Scripts)
+@interface BMBridgeCenter (Scripts)
 /**
  * <B> 调用 callback 的函数，这个函数是 js 端调用方法时，注册在 js 端的 block。
  * 这里传入的第一个参数是 和这个 js 端 block 相关联的 key。js 根据这个 key 找到这个 block 并且执行 </B>
