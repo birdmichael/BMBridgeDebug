@@ -69,7 +69,7 @@ static NSString *kLastWeinreScript = nil;
 
 - (BOOL)handleAction:(NSString *)action withParam:(NSDictionary *)paramDict callbackKey:(NSString *)callbackKey
 {
-//#ifdef DB_DEBUG
+#ifdef BD_DEBUG
     if ([@"eval" isEqualToString:action]) {
         [self.bridgeCenter evalExpression:[paramDict objectForKey:@"code"] completion:^(id  _Nonnull result, NSString * _Nonnull error) {
             BDDebugLog(@"%@, error = %@", result, error);
@@ -147,7 +147,7 @@ static NSString *kLastWeinreScript = nil;
                 [cookieStorage deleteCookie:cookie completionHandler:nil];
             }];
 
-            [self.appHost fire:@"clearCookieDone" param:@{@"count":@(cookies.count)}];
+            [self.bridgeCenter fire:@"clearCookieDone" param:@{@"count":@(cookies.count)}];
         }];
     } else if ([@"console.log" isEqualToString:action]) {
         // 正常的日志输出时，不需要做特殊处理。
@@ -157,9 +157,9 @@ static NSString *kLastWeinreScript = nil;
     }
     return YES;
     
-//#else
+#else
     return NO;
-//#endif
+#endif
 }
 
 // 注入 weinre 文件
@@ -180,7 +180,7 @@ static NSString *kLastWeinreScript = nil;
 
 + (NSDictionary<NSString *, NSString *> *)supportActionList {
     return @{
-//#ifdef DB_DEBUG
+#ifdef BD_DEBUG
              @"eval_" : @"1",
              @"list" : @"1",
              @"apropos_": @"1",
@@ -189,7 +189,7 @@ static NSString *kLastWeinreScript = nil;
              @"timing_" : @"1",
              @"console.log_": @"1",
              @"clearCookie": @"1"
-//#endif
+#endif
              };
 }
 

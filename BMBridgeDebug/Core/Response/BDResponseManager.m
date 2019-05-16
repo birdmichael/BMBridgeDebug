@@ -36,9 +36,10 @@
         
         // 静态注册 可响应的类
         NSArray<NSString *> *responseClassNames = @[
-                                                    //#ifdef AH_DEBUG
+                                                    @"BDBuiltInResponse",
+                                                    #ifdef BD_DEBUG
                                                     @"BDDebugResponse",
-                                                    //#endif
+                                                    #endif
                                                     ];
         [responseClassNames enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             [kResponeManger.customResponseClasses addObject:NSClassFromString(obj)];

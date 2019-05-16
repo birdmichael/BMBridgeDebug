@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
+#import "BMBridgeDebugHeader.h"
 
 static NSString * _Nullable kBMBridgeDebugInvokeRequestEvent = @"kBMBridgeDebugInvokeRequestEvent";
 static NSString * _Nullable kBMBridgeDebugInvokeResponseEvent = @"kBMBridgeDebugInvokeResponseEvent";

@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		01A044C2228D0D070099FD86 /* BDBuiltInResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 01A044C0228D0D070099FD86 /* BDBuiltInResponse.h */; };
+		01A044C3228D0D070099FD86 /* BDBuiltInResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A044C1228D0D070099FD86 /* BDBuiltInResponse.m */; };
 		01E0932B228ABBDB002AE3E6 /* BMBridgeDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E09329228ABBDB002AE3E6 /* BMBridgeDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01E0935B228ABBFA002AE3E6 /* GCDWebServerFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E09334228ABBFA002AE3E6 /* GCDWebServerFunctions.h */; };
 		01E0935C228ABBFA002AE3E6 /* GCDWebServerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E09335228ABBFA002AE3E6 /* GCDWebServerPrivate.h */; };
@@ -94,6 +96,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01A044C0228D0D070099FD86 /* BDBuiltInResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDBuiltInResponse.h; sourceTree = "<group>"; };
+		01A044C1228D0D070099FD86 /* BDBuiltInResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDBuiltInResponse.m; sourceTree = "<group>"; };
 		01E09326228ABBDB002AE3E6 /* BMBridgeDebug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BMBridgeDebug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01E09329228ABBDB002AE3E6 /* BMBridgeDebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMBridgeDebug.h; sourceTree = "<group>"; };
 		01E0932A228ABBDB002AE3E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -369,6 +373,8 @@
 				01E093F7228C0335002AE3E6 /* BDResponseManager.m */,
 				01E093FD228C04A4002AE3E6 /* BDDebugResponse.h */,
 				01E093FE228C04A4002AE3E6 /* BDDebugResponse.m */,
+				01A044C0228D0D070099FD86 /* BDBuiltInResponse.h */,
+				01A044C1228D0D070099FD86 /* BDBuiltInResponse.m */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -391,6 +397,7 @@
 				01E093AF228ABCAF002AE3E6 /* BMDebugServerManager.h in Headers */,
 				01E093BE228B04C0002AE3E6 /* BDDebugViewController.h in Headers */,
 				01E0937A228ABBFA002AE3E6 /* HTMLNode.h in Headers */,
+				01A044C2228D0D070099FD86 /* BDBuiltInResponse.h in Headers */,
 				01E0935C228ABBFA002AE3E6 /* GCDWebServerPrivate.h in Headers */,
 				01E0937C228ABBFA002AE3E6 /* HTMLParser.h in Headers */,
 				01E0935E228ABBFA002AE3E6 /* GCDWebServerConnection.h in Headers */,
@@ -530,6 +537,7 @@
 				01E093FB228C0335002AE3E6 /* BDResponseManager.m in Sources */,
 				01E09379228ABBFA002AE3E6 /* HTMLParser.m in Sources */,
 				01E09364228ABBFA002AE3E6 /* GCDWebServer.m in Sources */,
+				01A044C3228D0D070099FD86 /* BDBuiltInResponse.m in Sources */,
 				01E09360228ABBFA002AE3E6 /* GCDWebServerRequest.m in Sources */,
 				01E0936B228ABBFA002AE3E6 /* GCDWebServerFileResponse.m in Sources */,
 				01E09365228ABBFA002AE3E6 /* GCDWebServerConnection.m in Sources */,
@@ -679,7 +687,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
-					"$(inherited)",
 					"BD_DEBUG=1",
 				);
 				HEADER_SEARCH_PATHS = "$(SDK_DIR)/usr/include/libxml2";

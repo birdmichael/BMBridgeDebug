@@ -65,6 +65,7 @@
     }
     
     if (![self respondsToSelector:sel]) {
+        BDDebugLog(@"找不到%@方法",action);
         return NO;
     }
     [self runSelector:sel withObjects:[NSArray arrayWithObjects:paramDict, callbackKey, nil]];
@@ -88,7 +89,7 @@
     [invocation invoke];
     
     if (methodSignature.methodReturnLength > 0) {
-        id value;
+        __unsafe_unretained id value;
         [invocation getReturnValue:&value];
         return value;
     }
