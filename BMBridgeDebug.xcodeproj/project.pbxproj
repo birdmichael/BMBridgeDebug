@@ -23,6 +23,8 @@
 /* Begin PBXBuildFile section */
 		01A044C2228D0D070099FD86 /* BDBuiltInResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 01A044C0228D0D070099FD86 /* BDBuiltInResponse.h */; };
 		01A044C3228D0D070099FD86 /* BDBuiltInResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A044C1228D0D070099FD86 /* BDBuiltInResponse.m */; };
+		01A044E9228E6BDE0099FD86 /* bridgeDebug_version_1.5.0.js in Resources */ = {isa = PBXBuildFile; fileRef = 01A044E7228E6BDE0099FD86 /* bridgeDebug_version_1.5.0.js */; };
+		01A044EA228E6BDE0099FD86 /* eval.js in Resources */ = {isa = PBXBuildFile; fileRef = 01A044E8228E6BDE0099FD86 /* eval.js */; };
 		01E0932B228ABBDB002AE3E6 /* BMBridgeDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E09329228ABBDB002AE3E6 /* BMBridgeDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01E0935B228ABBFA002AE3E6 /* GCDWebServerFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E09334228ABBFA002AE3E6 /* GCDWebServerFunctions.h */; };
 		01E0935C228ABBFA002AE3E6 /* GCDWebServerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E09335228ABBFA002AE3E6 /* GCDWebServerPrivate.h */; };
@@ -83,8 +85,6 @@
 		01E093E0228B35A9002AE3E6 /* BMBridgeCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E093DE228B35A9002AE3E6 /* BMBridgeCenter.m */; };
 		01E093E3228B361A002AE3E6 /* BMBridgeCenter+Scripts.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E093E1228B361A002AE3E6 /* BMBridgeCenter+Scripts.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01E093E4228B361A002AE3E6 /* BMBridgeCenter+Scripts.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E093E2228B361A002AE3E6 /* BMBridgeCenter+Scripts.m */; };
-		01E093EA228B38C2002AE3E6 /* bridgeDebug_version_1.5.0.js in Resources */ = {isa = PBXBuildFile; fileRef = 01E093E8228B38C2002AE3E6 /* bridgeDebug_version_1.5.0.js */; };
-		01E093EB228B38C2002AE3E6 /* eval.js in Resources */ = {isa = PBXBuildFile; fileRef = 01E093E9228B38C2002AE3E6 /* eval.js */; };
 		01E093F9228C0335002AE3E6 /* BDResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E093F5228C0335002AE3E6 /* BDResponse.m */; };
 		01E093FA228C0335002AE3E6 /* BDResponseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E093F6228C0335002AE3E6 /* BDResponseManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01E093FB228C0335002AE3E6 /* BDResponseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E093F7228C0335002AE3E6 /* BDResponseManager.m */; };
@@ -98,6 +98,8 @@
 /* Begin PBXFileReference section */
 		01A044C0228D0D070099FD86 /* BDBuiltInResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDBuiltInResponse.h; sourceTree = "<group>"; };
 		01A044C1228D0D070099FD86 /* BDBuiltInResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDBuiltInResponse.m; sourceTree = "<group>"; };
+		01A044E7228E6BDE0099FD86 /* bridgeDebug_version_1.5.0.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bridgeDebug_version_1.5.0.js; sourceTree = "<group>"; };
+		01A044E8228E6BDE0099FD86 /* eval.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = eval.js; sourceTree = "<group>"; };
 		01E09326228ABBDB002AE3E6 /* BMBridgeDebug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BMBridgeDebug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01E09329228ABBDB002AE3E6 /* BMBridgeDebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMBridgeDebug.h; sourceTree = "<group>"; };
 		01E0932A228ABBDB002AE3E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -161,8 +163,6 @@
 		01E093DE228B35A9002AE3E6 /* BMBridgeCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMBridgeCenter.m; sourceTree = "<group>"; };
 		01E093E1228B361A002AE3E6 /* BMBridgeCenter+Scripts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BMBridgeCenter+Scripts.h"; sourceTree = "<group>"; };
 		01E093E2228B361A002AE3E6 /* BMBridgeCenter+Scripts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BMBridgeCenter+Scripts.m"; sourceTree = "<group>"; };
-		01E093E8228B38C2002AE3E6 /* bridgeDebug_version_1.5.0.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bridgeDebug_version_1.5.0.js; sourceTree = "<group>"; };
-		01E093E9228B38C2002AE3E6 /* eval.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = eval.js; sourceTree = "<group>"; };
 		01E093F5228C0335002AE3E6 /* BDResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDResponse.m; sourceTree = "<group>"; };
 		01E093F6228C0335002AE3E6 /* BDResponseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDResponseManager.h; sourceTree = "<group>"; };
 		01E093F7228C0335002AE3E6 /* BDResponseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDResponseManager.m; sourceTree = "<group>"; };
@@ -185,6 +185,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01A044E6228E6BDE0099FD86 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				01A044E7228E6BDE0099FD86 /* bridgeDebug_version_1.5.0.js */,
+				01A044E8228E6BDE0099FD86 /* eval.js */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
 		01E0931C228ABBDB002AE3E6 = {
 			isa = PBXGroup;
 			children = (
@@ -340,8 +349,8 @@
 		01E093B6228ACCF0002AE3E6 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				01A044E6228E6BDE0099FD86 /* html */,
 				01E093F4228C0335002AE3E6 /* Response */,
-				01E093E7228B38C2002AE3E6 /* html */,
 				01E093B8228AD2AB002AE3E6 /* BMBridgeDebugHeader.h */,
 				01E093BA228ADD33002AE3E6 /* BMBridgeDebugProtocol.h */,
 				01E093DD228B35A9002AE3E6 /* BMBridgeCenter.h */,
@@ -352,16 +361,6 @@
 				01E09402228C0D7F002AE3E6 /* BMBridgeCenter+Dispatch.m */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		01E093E7228B38C2002AE3E6 /* html */ = {
-			isa = PBXGroup;
-			children = (
-				01E093E8228B38C2002AE3E6 /* bridgeDebug_version_1.5.0.js */,
-				01E093E9228B38C2002AE3E6 /* eval.js */,
-			);
-			name = html;
-			path = ../../../../Downloads/AppHostExample/AppHost/AppHost/Core/html;
 			sourceTree = "<group>";
 		};
 		01E093F4228C0335002AE3E6 /* Response */ = {
@@ -488,9 +487,9 @@
 				01E093DC228B2786002AE3E6 /* thirdParty in Resources */,
 				01E093DA228B2786002AE3E6 /* components in Resources */,
 				01E093AA228ABC88002AE3E6 /* testcase.tmpl in Resources */,
-				01E093EA228B38C2002AE3E6 /* bridgeDebug_version_1.5.0.js in Resources */,
+				01A044E9228E6BDE0099FD86 /* bridgeDebug_version_1.5.0.js in Resources */,
 				01E093A8228ABC88002AE3E6 /* logo.png in Resources */,
-				01E093EB228B38C2002AE3E6 /* eval.js in Resources */,
+				01A044EA228E6BDE0099FD86 /* eval.js in Resources */,
 				01E093A9228ABC88002AE3E6 /* vue.js in Resources */,
 				01E0939F228ABC88002AE3E6 /* server.js in Resources */,
 				01E093AB228ABC88002AE3E6 /* server.html in Resources */,

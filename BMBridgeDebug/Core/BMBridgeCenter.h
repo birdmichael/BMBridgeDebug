@@ -18,8 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BMBridgeCenter : NSObject
 
-@property (nonatomic, strong, readonly) WKWebView *webView;
-
+@property (nonatomic, weak) UIViewController *vc;
+@property (nonatomic, weak) WKWebView *webView;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -25,7 +25,7 @@
  */
 //- (BOOL)handleAction:(NSString *)action withParam:(NSDictionary *)paramDict callbackKey:(NSString *)callbackKey;
 
-@property (nonatomic, strong) BMBridgeCenter* center;
+@property (nonatomic, strong) BMBridgeCenter* bridgeCenter;
 
 
 @end

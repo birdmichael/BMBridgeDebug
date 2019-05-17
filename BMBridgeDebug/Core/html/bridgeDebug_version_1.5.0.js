@@ -1,11 +1,11 @@
 !function() {
-    window.appHost = {
+    window.bridgeDebug = {
         version: "1.5.1"
     };
     
     var callbackPool = {};
     var ack_no = 1;
-    window.appHost.invoke = function(_action, _data, _callback) {
+    window.bridgeDebug.invoke = function(_action, _data, _callback) {
         var rndKey = 'cbk_' + new Date().getTime();
         var fullParam = {
             action: _action,
@@ -20,10 +20,10 @@
         window.webkit.messageHandlers.kAHScriptHandlerName.postMessage(fullParam)
     }
     var reqs = {};
-    window.appHost.on = function(_action, _callback) {
+    window.bridgeDebug.on = function(_action, _callback) {
         reqs[_action + ""] = _callback;
     }
-    window.appHost.__fire = function(_action, _data) {
+    window.bridgeDebug.__fire = function(_action, _data) {
         var func = reqs[_action + ""];
         if (typeof func == 'function') {
             func(_data);

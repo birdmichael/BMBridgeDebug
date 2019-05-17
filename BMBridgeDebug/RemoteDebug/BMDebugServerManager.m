@@ -72,7 +72,7 @@ BOOL kGCDWebServer_logging_enabled = YES;
         UIViewController *topViewController = [self visibleViewController];
         if ([topViewController conformsToProtocol:@protocol(BMBridgeDebugCenterProtocol)]) {
             id<BMBridgeDebugCenterProtocol> vc = (id<BMBridgeDebugCenterProtocol>)topViewController;
-            [vc.center callNative:action parameter:param];
+            [vc.bridgeCenter callNative:action parameter:param];
         } else {
             NSString *reason = [NSString stringWithFormat:@"[%@ : %p]必须遵循BMBridgeDebugCenterProtocol协议", [topViewController class], topViewController];
             BDDebugLog(@"%@",reason);

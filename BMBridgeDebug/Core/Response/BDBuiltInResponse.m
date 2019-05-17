@@ -18,14 +18,11 @@
 }
 
 #pragma mark - inner
-bd_doc_begin(versionNumber, "loading 的 HUD 动画，这里是AppHost默认实现显示。")
-bd_doc_param(text, "字符串，设置和 loading 动画一起显示的文案")
+
+bd_doc_begin(versionNumber, "返回当前的版本。")
 bd_doc_code(window.bridgeDebug.invoke("versionNumber"))
-bd_doc_code_expect("在屏幕上出现 loading 动画，多次调用此接口，不应该出现多个")
 bd_doc_return(NSNumber, "返回版本号")
 bd_doc_end
-
-
 - (void)versionNumber {
     NSLog(@"%@", @(BMBridgeDebugVersionNumber));
 }
